@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./server/bin/www",
+    "dev": "concurrently \"nodemon server/bin/www\" \"npm run start --prefix client\""
   },
   "dependencies": {
+    "concurrently": "^5.3.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
