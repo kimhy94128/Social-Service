@@ -19,7 +19,7 @@ function App() {
           <Route exact path='/mypage' component={Mypage} />
         </section>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
